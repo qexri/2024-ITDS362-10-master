@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.0 on win32)" generated="2024-11-23T16:14:22.513887" rpa="false" schemaversion="5">
+<suite id="s1" name="TC07 Test Checkdetailorder" source="C:\QA\Qa_Project2\TC07_Test_Checkdetailorder.robot">
+<test id="s1-t1" name="TC-07 Signin Medusa Store" line="8">
+<kw name="Open Web Medusa Store" owner="03_Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-23T16:14:22.833369" level="INFO">Opening browser 'firefox' to base url 'https://45.136.236.146/'.</msg>
+<arg>${Medusa}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-23T16:14:22.832372" elapsed="25.257371"/>
+</kw>
+<status status="PASS" start="2024-11-23T16:14:22.831373" elapsed="25.259368"/>
+</kw>
+<status status="PASS" start="2024-11-23T16:14:22.830377" elapsed="25.261365"/>
+</test>
+<test id="s1-t2" name="TC-07.1 Enter account page" line="10">
+<kw name="Enter account page" owner="03_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-23T16:14:48.094730" level="INFO">Clicking element 'css=[data-testid="nav-account-link"]'.</msg>
+<arg>${account_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-23T16:14:48.093732" elapsed="0.284268"/>
+</kw>
+<status status="PASS" start="2024-11-23T16:14:48.093732" elapsed="0.284268"/>
+</kw>
+<kw name="Wait for load Page" owner="03_Keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-23T16:14:51.379377" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-23T16:14:48.378996" elapsed="3.000381"/>
+</kw>
+<status status="PASS" start="2024-11-23T16:14:48.378000" elapsed="3.001377"/>
+</kw>
+<status status="PASS" start="2024-11-23T16:14:48.092736" elapsed="3.286641"/>
+</test>
+<test id="s1-t3" name="TC-07.2 Sign in" line="13">
+<kw name="Input info for Signin" owner="03_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-23T16:14:51.382367" level="INFO">Typing text 'group105@gmail.com' into text field 'css=[data-testid="email-input"]'.</msg>
+<msg time="2024-11-23T16:14:51.441665" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-23T16:14:51.441665" level="FAIL">Element with locator 'css=[data-testid="email-input"]' not found.</msg>
+<arg>${Sn_mail_box}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-23T16:14:51.381370" elapsed="0.067276">Element with locator 'css=[data-testid="email-input"]' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${Sn_Pass_box}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-23T16:14:51.448646" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-23T16:14:51.381370" elapsed="0.068275">Element with locator 'css=[data-testid="email-input"]' not found.</status>
+</kw>
+<kw name="Enter Signin" owner="03_Keywords">
+<status status="NOT RUN" start="2024-11-23T16:14:51.451637" elapsed="0.000000"/>
+</kw>
+<kw name="Wait for load Page" owner="03_Keywords">
+<status status="NOT RUN" start="2024-11-23T16:14:51.451637" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-23T16:14:51.381370" elapsed="0.071265">Element with locator 'css=[data-testid="email-input"]' not found.</status>
+</test>
+<test id="s1-t4" name="TC-07.3 select Orders" line="17">
+<kw name="Wait for load Page" owner="03_Keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-23T16:14:54.454837" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-23T16:14:51.454630" elapsed="3.000207"/>
+</kw>
+<status status="PASS" start="2024-11-23T16:14:51.454630" elapsed="3.000207"/>
+</kw>
+<kw name="account page select Orders" owner="03_Keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-23T16:14:57.456384" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-23T16:14:54.455835" elapsed="3.000549"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-23T16:14:57.456897" level="INFO">Clicking element 'xpath=//a[@data-testid='orders-link' and contains(text(), 'Orders')]'.</msg>
+<msg time="2024-11-23T16:14:57.514735" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-23T16:14:57.515732" level="FAIL">Element with locator 'xpath=//a[@data-testid='orders-link' and contains(text(), 'Orders')]' not found.</msg>
+<arg>${orders_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-23T16:14:57.456384" elapsed="0.061344">Element with locator 'xpath=//a[@data-testid='orders-link' and contains(text(), 'Orders')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-11-23T16:14:54.454837" elapsed="3.062891">Element with locator 'xpath=//a[@data-testid='orders-link' and contains(text(), 'Orders')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-11-23T16:14:51.453632" elapsed="6.066090">Element with locator 'xpath=//a[@data-testid='orders-link' and contains(text(), 'Orders')]' not found.</status>
+</test>
+<test id="s1-t5" name="TC-07.4 select see details orders" line="20">
+<kw name="Wait for load Page" owner="03_Keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-23T16:15:00.525720" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-23T16:14:57.524709" elapsed="3.001011"/>
+</kw>
+<status status="PASS" start="2024-11-23T16:14:57.524709" elapsed="3.001011"/>
+</kw>
+<kw name="account page select Orders See details" owner="03_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-23T16:15:00.526619" level="INFO">Clicking element 'css:[data-testid="order-details-link"]'.</msg>
+<msg time="2024-11-23T16:15:00.560027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-23T16:15:00.560027" level="FAIL">Element with locator 'css:[data-testid="order-details-link"]' not found.</msg>
+<arg>${order_details_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-23T16:15:00.526619" elapsed="0.034407">Element with locator 'css:[data-testid="order-details-link"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-11-23T16:15:00.526619" elapsed="0.034407">Element with locator 'css:[data-testid="order-details-link"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-11-23T16:14:57.523713" elapsed="3.040305">Element with locator 'css:[data-testid="order-details-link"]' not found.</status>
+</test>
+<test id="s1-t6" name="TC-07.5 Order details Back to Order" line="23">
+<kw name="Wait for load Page" owner="03_Keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-23T16:15:03.569935" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-23T16:15:00.569005" elapsed="3.000930"/>
+</kw>
+<status status="PASS" start="2024-11-23T16:15:00.568007" elapsed="3.001928"/>
+</kw>
+<kw name="account page details Orders Back to Orders" owner="03_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-23T16:15:03.571931" level="INFO">Clicking element 'css:[data-testid="back-to-overview-button"]'.</msg>
+<msg time="2024-11-23T16:15:03.599855" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-23T16:15:03.599855" level="FAIL">Element with locator 'css:[data-testid="back-to-overview-button"]' not found.</msg>
+<arg>${back_to_overview_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-23T16:15:03.570933" elapsed="0.029920">Element with locator 'css:[data-testid="back-to-overview-button"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-11-23T16:15:03.569935" elapsed="0.030918">Element with locator 'css:[data-testid="back-to-overview-button"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-11-23T16:15:00.567010" elapsed="3.044813">Element with locator 'css:[data-testid="back-to-overview-button"]' not found.</status>
+</test>
+<status status="FAIL" start="2024-11-23T16:14:22.516880" elapsed="41.097935"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="4" skip="0" id="s1" name="TC07 Test Checkdetailorder">TC07 Test Checkdetailorder</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
